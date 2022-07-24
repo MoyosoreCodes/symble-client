@@ -1,38 +1,43 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: Lato;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@media only screen and (min-width: 390px) {
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  };
+  
+  body {
+    font-family: Lato;
+    font-style: normal;
+  };
+
+  img {
+    position: absolute;
+    width: 18px;
+    height: 38px;
+    left: 30px;
+    top: 75px;
+
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+  };
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media only screen and (min-height: 844px) {
+  
 }
