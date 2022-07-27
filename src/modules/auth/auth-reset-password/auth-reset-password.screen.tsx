@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import Symble from '../../../assets/S.svg';
 import axios from 'axios';
-
+import symbleLogo from '../../../assets/S.svg';
 
 export default function AuthResetPassword() {
   const [password, setPassword]= useState("")
@@ -18,10 +18,10 @@ export default function AuthResetPassword() {
 
   }
   return (
-    <div className="auth-hearder">
+    <div className="white-container">
       {/* header */}
-        <div className="symble">
-          <img src={Symble} alt="Symble logo" />
+        <div className="symbleLogo">
+          <img src={symbleLogo} alt="Symble logo" />
         </div>
         <h1 className='rev-title'>
           Reset password

@@ -2,7 +2,7 @@ import React,{useState} from 'react';
 import Symble from '../../../assets/S.svg';
 import axios from 'axios';
 import { useHistory } from 'react-router-dom';
-
+import symbleLogo from '../../../assets/S.svg';
 
 
 export default function AuthRecovery() {
@@ -28,11 +28,11 @@ export default function AuthRecovery() {
     }
   };
   return (
-    <div className='auth-container'>
+    <div className='white-container'>
       {/* Header */}
       <div className="auth-hearder">
-          <div className="symble">
-            <img src={Symble} alt="Symble logo" />
+          <div className="symbleLogo">
+            <img src={symbleLogo} alt="Symble logo" />
           </div>
           <h1 className='rev-title'>
             Forgot password

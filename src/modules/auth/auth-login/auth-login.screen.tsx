@@ -1,5 +1,6 @@
 import React, {useState} from 'react'
 import Symble from '../../../assets/S.svg';
+import symbleLogo from '../../../assets/S.svg';
 import Googleicon from '../../../assets/Google.svg';
 import Facebookicon from '../../../assets/Facebook.svg';
 import Twittericon from '../../../assets/Twitter.svg';
@@ -15,7 +16,7 @@ function AuthLogin() {
   const onSubmit = async (e:any) => {
     e.preventDefault()
     try {
-      const response =await axios.post('https://spray-dev.herokuapp.com/api/users/auth/',{email:email, password:password}
+      const response =await axios.post('https://spray-dev.herokuapp.com/api/auth/login',{email:email, password:password}
       )
       console.log(response.data);
       
@@ -25,11 +26,11 @@ function AuthLogin() {
     }
   };
   return (
-    <div className='auth-container'>
+    <div className='white-container'>
       {/* Header */}
         <div className="auth-hearder">
-          <div className="symble">
-            <img src={Symble} alt="Symble logo" />
+          <div className="symbleLogo">
+            <img src={symbleLogo} alt="Symble logo" />
           </div>
           <h1 className='title'>
             Let's sign in
