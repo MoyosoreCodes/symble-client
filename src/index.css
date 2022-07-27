@@ -23,11 +23,14 @@ body {
   background: #4059AD;
 }
 
-/* .white-container {
+.container {
+  position: relative;
   width: 390px;
+  height: 812px;
+  padding: auto;
   margin: 0 auto;
-  background: #EFF2F1;
-} */
+  background: #eff2f1;
+}
 
 
 /* for the symble logo */
@@ -503,7 +506,7 @@ body {
 
   font-weight: 700;
   font-size: 16px;
-  color: #EFF2F1;;
+  color: #EFF2F1;
 }
 
 
@@ -646,16 +649,170 @@ body {
   border: 1px solid #EFF2F1;
 }
 
-@media screen, (min-width: 390px) and (min-height: 844px) {
+
+/* for the getting started page */
+.Coinimg {
+  position: absolute;
+  width: 132.76px;
+  height: 130.39px;
+  left: 212.43px;
+  top: 58px;
+  transform: matrix(1, 0.09, -0.1, 1, 2, 5);
+}
+
+.vector1 {
+  position: absolute;
+  width: 99.61px;
+  height: 104.83px;
+  left: 114px;
+  top: 158px;
+  transform: rotate(-4.2deg)
+}
+
+.Phoneimg {
+  position: absolute;
+  width: 149.17px;
+  height: 137.93px;
+  left: 34px;
+  top: 268px;
+  transform: rotate(-10.2deg)
+}
+
+.vector2 {
+  position: absolute;
+  width: 106.61px;
+  height: 113.18px;
+  left: 191px;
+  top: 226px;
+  transform: rotate(-0.85deg);
+}
+
+.get-text-1 {
+  position: absolute;
+  width: 315px;
+  height: 81px;
+  left: 39.6px;
+  top: 491px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #EFF2F1;
+}
+
+.get-text-2 {
+  position: absolute;
+  width: 287px;
+  height: 81px;
+  left: 55px;
+  top: 572px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #EFF2F1;
+}
+
+.get-btn {
+  position: absolute;
+  width: 312px;
+  height: 45px;
+  left: 42.5px;
+  top: 662px;
+  background: #EFF2F1;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+
+  color: #4059AD;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+}
+
+/* for the first onboarding page */
+.img-header {
+  position: absolute;
+  width: 390px;
+  height: 375px;
+  left: 0px;
+  top: 0px;
+}
+
+.screen1-text-1 {
+  position: absolute;
+  width: 270px;
+  height: 48px;
+  left: 64.5px;
+  top: 445px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  color: #323232;
+}
+
+.screen1-text-2 {
+  position: absolute;
+  width: 269px;
+  height: 51px;
+  left: 64px;
+  top: 535px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #999999;
+
+}
+
+.slider {
+  position: absolute;
+  width: 35px;
+  height: 4px;
+  left: 185px;
+  top: 639px;
+}
+
+.screen1-text-3 {
+  position: absolute;
+  width: 65px;
+  height: 29px;
+  left: 288px;
+  top: 680px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #4059AD;
+}
+
+.screen1-text-4 {
+  position: absolute;
+  width: 65px;
+  height: 29px;
+  left: 20px;
+  top: 680px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #4059AD;
+}
+
+/* @media screen, (max-width: 414px) and (min-height: 844px) {
+  .blue-container{
+    height: 844px;
+  }
+  
   .symble-lable {
     margin: 0 100px;
   }
-
-  /* .blue-container {
-    width: 390px;
-    margin: 0 auto;
-    margin-top: 51px;
-    
-    background: #4059AD;
-  } */
-}
+} */
