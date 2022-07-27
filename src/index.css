@@ -17,8 +17,16 @@ body {
 .blue-container {
   width: 390px;
   margin: 0 auto;
+  height: 100vh;
+  margin-top: 40vh;
   background: #4059AD;
 }
+
+/* .white-container {
+  width: 390px;
+  margin: 0 auto;
+  background: #EFF2F1;
+} */
 
 
 /* for the symble logo */
@@ -36,20 +44,9 @@ body {
 }
 
 .symble-lable {
-  /* width: 226px;
-  height: 97px;
-  left: 140px;
-  top: 357px; */
-
   font-weight: 700;
   font-size: 40px;
-  /* line-height: 48px; */
-  /* display: flex; */
-  /* margin: 50% auto; */
-
-  padding-top: 65%;
-  /* align-items: center; */
-  /* justify-content: center; */
+  padding-top: 100%;
   text-align: center;
   color: #EFF2F1;
 }
@@ -486,7 +483,6 @@ body {
   overflow: hidden;
   background: #4059AD;
   border-radius: 25px;
-
   font-weight: 700;
   font-size: 16px;
   color: #EFF2F1;;
@@ -649,10 +645,18 @@ body {
   border: 1px solid #EFF2F1;
 }
 
-@media only screen, (min-width: 390px) and (min-height: 844px) {
+@media screen, (min-width: 390px) and (min-height: 844px) {
   .symble-lable {
     margin: 25% 100px;
   }
+
+  /* .blue-container {
+    width: 390px;
+    margin: 0 auto;
+    margin-top: 51px;
+    
+    background: #4059AD;
+  } */
 }
 
 @media only screen, (mid-width: 375px) and (min-height: 667px){

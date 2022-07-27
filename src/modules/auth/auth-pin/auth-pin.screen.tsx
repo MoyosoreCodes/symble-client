@@ -3,7 +3,7 @@ import symbleLogo from '../../../assets/S.svg';
 
 export default function AuthPin() {
     return (
-        <div>
+        <div className="white-container">
             {/* header */}
                 <div className="symbleLogo">
                     <img src={symbleLogo} alt="Symble logo" />

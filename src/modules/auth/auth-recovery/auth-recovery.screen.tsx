@@ -4,7 +4,7 @@ import symbleLogo from '../../../assets/S.svg';
 
 export default function AuthRecovery() {
   return (
-    <div className='auth-container'>
+    <div className='white-container'>
       {/* Header */}
       <div className="auth-hearder">
           <div className="symbleLogo">

@@ -6,7 +6,7 @@ import Twittericon from '../../../assets/Twitter.svg';
 
 function AuthLogin() {
   return (
-    <div className='auth-container'>
+    <div className='white-container'>
       {/* Header */}
         <div className="auth-hearder">
           <div className="symbleLogo">
