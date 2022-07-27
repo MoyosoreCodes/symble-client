@@ -15,10 +15,11 @@ body {
 
 /* for the grid */
 .blue-container {
+  position: relative;
   width: 390px;
+  height: 812px;
+  padding: auto;
   margin: 0 auto;
-  height: 100vh;
-  margin-top: 40vh;
   background: #4059AD;
 }
 
@@ -647,7 +648,7 @@ body {
 
 @media screen, (min-width: 390px) and (min-height: 844px) {
   .symble-lable {
-    margin: 25% 100px;
+    margin: 0 100px;
   }
 
   /* .blue-container {
@@ -657,16 +658,4 @@ body {
     
     background: #4059AD;
   } */
-}
-
-@media only screen, (mid-width: 375px) and (min-height: 667px){
-  .symble-lable {
-    margin: 25% 100px;
-  }
-}
-
-@media only screen, (mid-width: 412px) and (min-height: 914px){
-  .symble-lable {
-    margin: 25% 100px;
-  }
 }
