@@ -1,5 +1,5 @@
 import React from 'react';
-import Symble from '../../../assets/S.svg';
+import symbleLogo from '../../../assets/S.svg';
 
 
 export default function AuthRecovery() {
@@ -7,8 +7,8 @@ export default function AuthRecovery() {
     <div className='auth-container'>
       {/* Header */}
       <div className="auth-hearder">
-          <div className="symble">
-            <img src={Symble} alt="Symble logo" />
+          <div className="symbleLogo">
+            <img src={symbleLogo} alt="Symble logo" />
           </div>
           <h1 className='rev-title'>
             Forgot password

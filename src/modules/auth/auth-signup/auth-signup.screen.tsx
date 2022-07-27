@@ -1,5 +1,5 @@
 import React from 'react'
-import Symble from '../../../assets/S.svg';
+import symbleLogo from '../../../assets/S.svg';
 import Googleicon from '../../../assets/Google.svg';
 import Facebookicon from '../../../assets/Facebook.svg';
 import Twittericon from '../../../assets/Twitter.svg';
@@ -9,8 +9,8 @@ export default function AuthSignup() {
     <div className='auth-container'>
       {/* Header */}
       <div className="auth-hearder">
-          <div className="symble">
-            <img src={Symble} alt="Symble logo" />
+          <div className="symbleLogo">
+            <img src={symbleLogo} alt="Symble logo" />
           </div>
           <h1 className='title'>
            Sign up

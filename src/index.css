@@ -9,28 +9,20 @@
 body {
   font-family: Lato;
   font-style: normal;
+  height: 100vh;
+  overflow: hidden;
 }
 
-/* to grid the forms  */
-.auth-container {
-  display: grid;
-  grid-template-rows: 50px 4fr 200px;
-  grid-template-areas: "header"
-                       "body"
-                       "footer";
-}
-
-.auth-header {
-  grid-area: header;   
-}
-
-.auth-form {
-  grid-area: body;
+/* for the grid */
+.blue-container {
+  width: 390px;
+  margin: 0 auto;
+  background: #4059AD;
 }
 
 
 /* for the symble logo */
-.symble {
+.symbleLogo{
   position: absolute;
   width: 18px;
   height: 38px;
@@ -41,6 +33,25 @@ body {
   line-height: 38px;
   display: flex;
   align-items: center;
+}
+
+.symble-lable {
+  /* width: 226px;
+  height: 97px;
+  left: 140px;
+  top: 357px; */
+
+  font-weight: 700;
+  font-size: 40px;
+  /* line-height: 48px; */
+  /* display: flex; */
+  /* margin: 50% auto; */
+
+  padding-top: 65%;
+  /* align-items: center; */
+  /* justify-content: center; */
+  text-align: center;
+  color: #EFF2F1;
 }
 
 /* the login and signin headers */
@@ -431,6 +442,7 @@ body {
   border-radius: 25px;
   outline: none;
   overflow: hidden;
+  color: #EFF2F1;
 }
 
 .sig-btn-signin {
@@ -445,7 +457,7 @@ body {
   outline: none;
   overflow: hidden;
   font-weight: bolder;
-  text-decoration: #EFF2F1;
+  color: #EFF2F1;
 }
 
 .reset-btn-signin {
@@ -460,7 +472,7 @@ body {
   background: #4059AD;
   border-radius: 25px;
   font-weight: bolder;
-  text-decoration: #EFF2F1
+  color: #EFF2F1;
 }
 
 .rev-btn-signin {
@@ -477,7 +489,7 @@ body {
 
   font-weight: 700;
   font-size: 16px;
-  text-decoration: #EFF2F1;
+  color: #EFF2F1;;
 }
 
 .pin-btn-signin {
@@ -494,14 +506,9 @@ body {
 
   font-weight: 700;
   font-size: 16px;
-  text-decoration: #EFF2F1;
+  color: #EFF2F1;;
 }
 
-.btn-text {
-  position: absolute;
-  font-weight: lighter;
-  text-decoration: #EFF2F1;
-}
 
 /* the lines in the login ang sign in page */
 .log-line-left {
@@ -642,6 +649,20 @@ body {
   border: 1px solid #EFF2F1;
 }
 
-@media screen, (max-width: 390px), (min-width: 390px) {
+@media only screen, (min-width: 390px) and (min-height: 844px) {
+  .symble-lable {
+    margin: 25% 100px;
+  }
+}
 
+@media only screen, (mid-width: 375px) and (min-height: 667px){
+  .symble-lable {
+    margin: 25% 100px;
+  }
+}
+
+@media only screen, (mid-width: 412px) and (min-height: 914px){
+  .symble-lable {
+    margin: 25% 100px;
+  }
 }
