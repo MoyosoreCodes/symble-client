@@ -15,12 +15,9 @@ function Screen3() {
             </h1>
 
             <img className="slider" src={Slider3} alt="" />
-            <h1 className="screen1-text-3">
-                Next
-            </h1>
-            <h1 className="screen1-text-4">
-                Prev
-            </h1>
+            
+            <a className="screen1-text-3" href="">Next</a>
+            <a className="screen1-text-4" href="">Prev</a>
         </div>
     )
 }

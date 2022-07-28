@@ -6,9 +6,9 @@ import Twittericon from '../../../assets/Twitter.svg';
 
 function AuthLogin() {
   return (
-    <div className='white-container'>
+    <div className='container'>
       {/* Header */}
-        <div className="auth-hearder">
+        <div className="auth-header">
           <div className="symbleLogo">
             <img src={symbleLogo} alt="Symble logo" />
           </div>
@@ -39,23 +39,30 @@ function AuthLogin() {
         </div>
       {/* form */}  
 
-      {/* line */}
-        <hr className='log-line-left'/>
-          <span className='log-line-text'>or sign in with</span>
-        <hr className='log-line-right'/>
-      {/* line */}
 
-      {/* auth-botton */}
-      <div className="cic-log-google">
-        <img className='log-google' src={Googleicon} alt=""/>
+      {/* Footer */}
+        
+        <div className="auth-footer">
+          {/* line */}
+            <hr className='log-line-left'/>
+                <span className='log-line-text'>or sign in with</span>
+            <hr className='log-line-right'/>
+          {/* line */}
+
+          {/* auth-botton */}
+            <div className="cic-log-google">
+              <img className='log-google' src={Googleicon} alt=""/>
+            </div>
+            <div className="cic-log-facebook">
+              <img className='log-facebook'src={Facebookicon} alt=""/>
+            </div>
+            <div className="cic-log-twitter">
+              <img className='log-twitter' src={Twittericon} alt=""/>
+            </div>
+          {/* auth-botton */}
       </div>
-      <div className="cic-log-facebook">
-        <img className='log-facebook'src={Facebookicon} alt=""/>
-      </div>
-      <div className="cic-log-twitter">
-        <img className='log-twitter' src={Twittericon} alt=""/>
-      </div>
-      {/* auth-botton */}
+        
+      {/* Footer */}
     </div>
   )
 }

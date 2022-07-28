@@ -6,9 +6,9 @@ import Twittericon from '../../../assets/Twitter.svg';
 
 export default function AuthSignup() {
   return (
-    <div className='white-container'>
+    <div className='container'>
       {/* Header */}
-      <div className="auth-hearder">
+      <div className="auth-header">
           <div className="symbleLogo">
             <img src={symbleLogo} alt="Symble logo" />
           </div>
