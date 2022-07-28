@@ -13,15 +13,12 @@ export default function AuthRecovery() {
   const onSubmit = async (e:any) => {
     e.preventDefault()
     try {
-      if (email) {
-        setDisabled(false)
-      }
       const response =await axios.post('https://spray-dev.herokuapp.com/api/auth/forgot-password',{email:email}
       )
       console.log(response.data);
       setEmail("");
 
-      history.push('/login');
+      history.push('/reset-password');
     } catch (error) {
       console.log(error);
       
@@ -50,7 +47,7 @@ export default function AuthRecovery() {
             <label className='rev-user-label' htmlFor="Email Address/Username">Email Address</label>
             <input className='rev-user-input' type="text" placeholder='Enter account email' value={email} onChange={(e)=>setEmail(e.target.value)}/>
 
-            <button className='rev-btn-signin' type='button'  onClick={onSubmit} disabled={disabled}>
+            <button className='rev-btn-signin' type='button'  onClick={onSubmit} >
               Send email
             </button>
           </form>

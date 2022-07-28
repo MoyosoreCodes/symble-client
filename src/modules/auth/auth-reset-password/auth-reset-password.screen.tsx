@@ -2,16 +2,23 @@ import React,{useState} from 'react'
 import Symble from '../../../assets/S.svg';
 import axios from 'axios';
 import symbleLogo from '../../../assets/S.svg';
+import { useParams } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+
 
 export default function AuthResetPassword() {
+  // let {token} = useParams
+
   const [password, setPassword]= useState("")
   const [confirmPassword, setConfirmPassword]= useState("")
+  const history = useHistory();
 
   const handleSubmit = async(e:any)=> {
     e.preventDefault()
     try {
-      const response =await axios.post('https://spray-dev.herokuapp.com/api/auth/reset-password/?token=06VrvDgcFsLQx9w',{confirmPassword:confirmPassword, password:password}
+      const response =await axios.post('https://spray-dev.herokuapp.com/api/auth/reset-password',{confirmPassword:confirmPassword, password:password}
       );
+      history.push('/login');
     } catch (error) {
       
     }

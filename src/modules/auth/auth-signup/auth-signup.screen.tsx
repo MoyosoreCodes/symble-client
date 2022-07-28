@@ -17,7 +17,14 @@ export default function AuthSignup() {
   const [password2, setPassword2]= useState("")
   // const [disabled, setDisabled] = useState(true)
 
-
+  const handleGoogleSignup = async () =>{
+    try {
+      const response =await axios.post('https://spray-dev.herokuapp.com/api/users/google'
+      );
+    } catch (error) {
+      
+    }
+  }
 
   const onSubmit = async (e:any) => {
     e.preventDefault()
@@ -87,9 +94,7 @@ export default function AuthSignup() {
       {/* line */}
 
       {/* auth-botton */}
-      <a href='https://spray-dev.herokuapp.com/api/users/google/'>
-        <img className='sig-google' src={Googleicon} alt="" />
-      </a>
+        <img className='sig-google' src={Googleicon} alt="" onClick={handleGoogleSignup}/>
         <img className='sig-facebook'src={Facebookicon} alt=""/>
         <img className='sig-twitter' src={Twittericon} alt=""/>
       {/* auth-botton */}
