@@ -11,6 +11,8 @@ import GettingStarted from './modules/onboarding/getting-started/getting-started
 import Screen1 from './modules/onboarding/screen1/screen';
 import Screen2 from './modules/onboarding/screen2/Screen2';
 import Screen3 from './modules/onboarding/screen3/screen3';
+import Cartegories1 from './modules/display/cartegories/categories-I';
+import Cartegories2 from './modules/display/cartegories/cartegories-II';
 
 function App() {
   return (
@@ -38,6 +40,10 @@ function App() {
           <Route exact path={"/onboardscreen2"} component={Screen2}/>
 
           <Route exact path={"/onboardscreen3"} component={Screen3}/>
+
+          <Route exact path={"/cartegories1"} component={Cartegories1}/>
+          
+          <Route exact path={"/cartegories2"} component={Cartegories2}/>
         {/* Routing for pages */}
         </Switch>
       </div> 

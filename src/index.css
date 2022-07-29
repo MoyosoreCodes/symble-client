@@ -32,21 +32,6 @@ body {
   background: #ffffff;
 }
 
-
-/* for the symble logo */
-.symbleLogo{
-  position: absolute;
-  width: 18px;
-  height: 38px;
-  left: 30px;
-  top: 75px;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-  display: flex;
-  align-items: center;
-}
-
 .auth-header {
   height: 25%;
 
@@ -69,6 +54,94 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.cat-header {
+  height: 17%;
+}
+
+.cat-body{
+  height: 83%;
+  
+}
+
+.cat-img {
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* for the cartegories */
+.cat-text {
+  position: absolute;
+  width: 315px;
+  height: 74px;
+  left: 30px;
+  top: 56px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #4059AD;
+}
+
+.cat-disabled {
+  position: absolute;
+  width: 272px;
+  height: 50px;
+  left: 65px;
+  top: 727px;
+  background: #CCCCCC;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  /* display: flex; */
+  align-items: center;
+  text-align: center;
+  color: #EFF2F1;
+}
+
+.cat-active {
+  position: absolute;
+  width: 272px;
+  height: 50px;
+  left: 65px;
+  top: 727px;
+  background: #4059AD;
+  border-radius: 25px;
+  border: none;
+  outline: none;
+  overflow: hidden;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+  color: #EFF2F1;
+}
+
+
+/* for the symble logo */
+.symbleLogo{
+  position: absolute;
+  width: 18px;
+  height: 38px;
+  left: 30px;
+  top: 75px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 38px;
+  display: flex;
+  align-items: center;
+}
+
+
 
 .symble-lable {
   font-weight: 700;
