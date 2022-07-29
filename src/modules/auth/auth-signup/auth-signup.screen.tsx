@@ -17,14 +17,14 @@ export default function AuthSignup() {
   const [password2, setPassword2]= useState("")
   // const [disabled, setDisabled] = useState(true)
 
-  const handleGoogleSignup = async () =>{
-    try {
-      const response =await axios.post('https://spray-dev.herokuapp.com/api/users/google'
-      );
-    } catch (error) {
+  // const handleGoogleSignup = async () =>{
+  //   try {
+  //     const response =await axios.post('https://spray-dev.herokuapp.com/api/users/google'
+  //     );
+  //   } catch (error) {
       
-    }
-  }
+  //   }
+  // }
 
   const onSubmit = async (e:any) => {
     e.preventDefault()
@@ -46,9 +46,9 @@ export default function AuthSignup() {
     }
   };
   return (
-    <div className='white-container'>
+    <div className='container'>
       {/* Header */}
-      <div className="auth-hearder">
+      <div className="auth-header">
           <div className="symbleLogo">
             <img src={symbleLogo} alt="Symble logo" />
           </div>
@@ -94,7 +94,9 @@ export default function AuthSignup() {
       {/* line */}
 
       {/* auth-botton */}
-        <img className='sig-google' src={Googleicon} alt="" onClick={handleGoogleSignup}/>
+      <a href="https://spray-dev.herokuapp.com/api/auth/google/signup">
+        <img className='sig-google' src={Googleicon} alt=""/>
+      </a>
         <img className='sig-facebook'src={Facebookicon} alt=""/>
         <img className='sig-twitter' src={Twittericon} alt=""/>
       {/* auth-botton */}

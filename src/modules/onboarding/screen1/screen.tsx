@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Screenimg1 from "../../../assets/screen1.png"
 import Slider1 from "../../../assets/slider-1.svg"
 
@@ -14,10 +15,10 @@ function Screen1() {
                 You can invite people to join your live event through the app and give you monetary gifts in real time.
             </h1>
 
-            <img className="slider-1" src={Slider1} alt="" />
-            <h1 className="screen1-text-3">
-                Next
-            </h1>
+            <img className="slider" src={Slider1} alt="" />
+            <Link to="onboardscreen2">
+                <a className="screen1-text-3" href="">Next</a>
+            </Link>
         </div>
     )
 }

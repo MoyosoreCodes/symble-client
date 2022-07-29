@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 // import ReactDOM from "react-dom";
 import { Route, Switch} from 'react-router-dom';
 import AuthLogin  from './modules/auth/auth-login/auth-login.screen';
@@ -14,7 +14,12 @@ import Screen2 from './modules/onboarding/screen2/Screen2';
 import Screen3 from './modules/onboarding/screen3/screen3';
 
 function App() {
+  const [token, setToken]= useState("")
+  const AuthContext = createContext({});
+
   return (
+      <AuthContext.Provider value={token}>
+
       <div className="App">
         <Switch>
         {/* Routing for pages */}
@@ -42,6 +47,7 @@ function App() {
         {/* Routing for pages */}
         </Switch>
       </div> 
+      </AuthContext.Provider>
   );
 }
 

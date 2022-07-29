@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Screenimg3 from "../../../assets/screen3.png"
 import Slider3 from "../../../assets/slider-3.svg"
 
@@ -15,12 +16,12 @@ function Screen3() {
             </h1>
 
             <img className="slider" src={Slider3} alt="" />
-            <h1 className="screen1-text-3">
-                Next
-            </h1>
-            <h1 className="screen1-text-4">
-                Prev
-            </h1>
+            <Link to="/signup">
+                <a className="screen1-text-3" href="">Next</a>
+            </Link>
+            <Link to="onboardscreen2">
+                <a className="screen1-text-4" href="">Prev</a>
+            </Link>
         </div>
     )
 }
