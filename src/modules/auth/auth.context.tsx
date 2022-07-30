@@ -19,3 +19,5 @@
 //     )
 // }
  import React, {createContext, useState, useContext, Children} from "react";
+
+ export const AuthContext = createContext({})

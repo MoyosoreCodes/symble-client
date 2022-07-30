@@ -6,21 +6,32 @@ import Facebookicon from '../../../assets/Facebook.svg';
 import Twittericon from '../../../assets/Twitter.svg';
 import { login } from '../auth.service';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
-
+import { Link, useHistory} from 'react-router-dom';
+import { Button, Form, Input } from 'antd';
+import { field_rules } from './auth-login.helper';
+import { AuthContext } from '../auth.context';
 
 function AuthLogin() {
-  // const {} = useContext(Auth)
+  const {setToken}:any = useContext(AuthContext)
+  let history = useHistory()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("")
-
+  const [emailError, setEmailError] = useState(false);
 
   const onSubmit = async (e:any) => {
     e.preventDefault()
     try {
+      if(!email){
+        setEmailError(true)        
+      }
       const response =await axios.post('https://spray-dev.herokuapp.com/api/auth/login',{email:email, password:password}
       )
+      history.push("/cartegories1")
       console.log(response.data);
+      const {token} = response.data
+      setToken(token)
+      console.log(token);
+      
       
     } catch (error) {
       console.log(error);
@@ -47,9 +58,10 @@ function AuthLogin() {
       {/* form */}
         <div className="auth-form">
           <form>
-            <label className='user-label' htmlFor="Email Address/Username"> Email Address or Username</label>
-            <input className='user-input' type="text" placeholder='Email Address or Username' value={email} onChange={(e)=>setEmail(e.target.value)}/>
-
+            <div>
+              <label className='user-label' htmlFor="Email Address/Username"> Email Address or Username</label>
+              <input className='user-input' type="text" placeholder='Email Address or Username' value={email} onChange={(e)=>setEmail(e.target.value)}/>
+            </div>
             <label className='password-label' htmlFor="Password">Password</label>
             <input className='password-input' type="Password" placeholder='Password' value={password} onChange={(e)=>setPassword(e.target.value)} autoComplete='new-password'/>
             <Link to="/recovery"className='rev-text' href="">Forgot password?</Link>

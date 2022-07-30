@@ -1,18 +1,25 @@
-import React,{useState} from "react";
+import React,{useState, useContext} from "react";
 import symbleLogo from '../../../assets/S.svg';
 import axios from 'axios';
+import { AuthContext } from '../auth.context';
 
 
 export default function AuthPin() {
+    // const {token}:any = useContext(AuthContext)
     const [pin, setPin] = useState("")
+    const token = localStorage.getItem('token')
 
     const handlePin = async(e:any)=>{
+        console.log(pin);
+        console.log(token);
         e.preventDefault()
         try {
-          const response =await axios.post('https://spray-dev.herokuapp.com/api/users/pin',{ pin:pin},{
-            // headers :{ 'authorization': 'Bearer ' + token }
+          const response =await axios.post('https://spray-dev.herokuapp.com/api/users/pin',{pin:pin},{
+            headers :{ authorization: 'Bearer ' + token}
           }
           )
+          console.log(token);
+          
           setPin("")
           console.log(response.data);
           

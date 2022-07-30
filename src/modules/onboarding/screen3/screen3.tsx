@@ -16,7 +16,7 @@ function Screen3() {
             </h1>
 
             <img className="slider" src={Slider3} alt="" />
-            <Link to="/signup">
+            <Link to="/login">
                 <a className="screen1-text-3" href="">Next</a>
             </Link>
             <Link to="onboardscreen2">
