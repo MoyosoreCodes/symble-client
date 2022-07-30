@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/symble-client/static/css/main.ff083abb.css",
+    "main.js": "/symble-client/static/js/main.82e19622.js",
+    "static/js/787.10c4298c.chunk.js": "/symble-client/static/js/787.10c4298c.chunk.js",
+    "static/media/screen1.png": "/symble-client/static/media/screen1.a40dd4270c5795b9a613.png",
+    "static/media/screen2.png": "/symble-client/static/media/screen2.3b0126d6321611edaf27.png",
+    "static/media/screen3.png": "/symble-client/static/media/screen3.64ad2359680a3ea51df5.png",
+    "static/media/coin.svg": "/symble-client/static/media/coin.989c3f311476e7a0f40e4f5fcbf901a6.svg",
+    "static/media/donation.svg": "/symble-client/static/media/donation.cf7679e284e4be638801b934f0f86b8d.svg",
+    "static/media/podcast-active.svg": "/symble-client/static/media/podcast-active.55a2de93b61c88443662a649cce1fceb.svg",
+    "static/media/commerce.svg": "/symble-client/static/media/commerce.057af6837137f46c74ee2d7ef804f687.svg",
+    "static/media/podcast.svg": "/symble-client/static/media/podcast.c73facb455dbf059282ebe7723fd3a49.svg",
+    "static/media/parties-active.svg": "/symble-client/static/media/parties-active.e3935c5d847964f7a087597c05641192.svg",
+    "static/media/marketing.svg": "/symble-client/static/media/marketing.328cf0adc3abbba3c434d2d8c9587068.svg",
+    "static/media/concept-active.svg": "/symble-client/static/media/concept-active.a96c2e4e4fdefd1b6e259e2b2bc333ce.svg",
+    "static/media/concept.svg": "/symble-client/static/media/concept.a3ce1ba9777012b0b9e19db84f9e95f1.svg",
+    "static/media/parties.svg": "/symble-client/static/media/parties.d26d879436efb718a1c185d9bfe23044.svg",
+    "static/media/auction.svg": "/symble-client/static/media/auction.5bb31e6f2cdbcbe651031709a087e362.svg",
+    "static/media/advert.svg": "/symble-client/static/media/advert.288a77ecaa2ea71c4fef21c410923cf3.svg",
+    "static/media/vector2.svg": "/symble-client/static/media/vector2.cdd050712a8c5af5e06a9584bfa20967.svg",
+    "static/media/vector1.svg": "/symble-client/static/media/vector1.ef8ee8b49a218200db49760203f9a67c.svg",
+    "static/media/phone.svg": "/symble-client/static/media/phone.351334b4d42105de0c518ff167c7562d.svg",
+    "static/media/S.svg": "/symble-client/static/media/S.5a3c59c5fe2ca3638f2b58831532ed92.svg",
+    "static/media/Google.svg": "/symble-client/static/media/Google.7f91c485c032de773198f46dd1d47da1.svg",
+    "static/media/Twitter.svg": "/symble-client/static/media/Twitter.1722ef42befc32f9fa207ad3b6230493.svg",
+    "static/media/Facebook.svg": "/symble-client/static/media/Facebook.e8aa90b1f157f4ba8fc14b1f99467ecc.svg",
+    "index.html": "/symble-client/index.html",
+    "static/media/slider-2.svg": "/symble-client/static/media/slider-2.f3768a15504ea8e849c86bc144f0fa4e.svg",
+    "static/media/slider-3.svg": "/symble-client/static/media/slider-3.c7f8b99367eff848d1dc66921ed98cc8.svg",
+    "static/media/slider-1.svg": "/symble-client/static/media/slider-1.b9678e0b7925f050a2f67d5e18359eb7.svg",
+    "main.ff083abb.css.map": "/symble-client/static/css/main.ff083abb.css.map",
+    "main.82e19622.js.map": "/symble-client/static/js/main.82e19622.js.map",
+    "787.10c4298c.chunk.js.map": "/symble-client/static/js/787.10c4298c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff083abb.css",
+    "static/js/main.82e19622.js"
+  ]
+}
