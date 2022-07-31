@@ -32,6 +32,9 @@ function AuthLogin() {
       if(!email){
         setEmailError(true)        
       }
+      if(!password){
+
+      }
       const response =await axios.post('https://spray-dev.herokuapp.com/api/auth/login',{email:email, password:password}
       )
       history.push("/cartegories1")
