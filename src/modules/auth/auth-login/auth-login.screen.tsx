@@ -3,6 +3,10 @@ import Symble from '../../../assets/S.svg';
 import symbleLogo from '../../../assets/S.svg';
 import Googleicon from '../../../assets/Google.svg';
 import Facebookicon from '../../../assets/Facebook.svg';
+import eye from '../../../assets/eye.svg';
+import eyeslash from '../../../assets/eye-slash.svg';
+
+
 import Twittericon from '../../../assets/Twitter.svg';
 import { login } from '../auth.service';
 import axios from 'axios';
@@ -17,7 +21,9 @@ function AuthLogin() {
   let history = useHistory()
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("")
+  const [showPassword, setShowPassword] = useState(false)
   const [emailError, setEmailError] = useState(false);
+  
 
 
   const onSubmit = async (e:any) => {
@@ -51,7 +57,7 @@ function AuthLogin() {
           Let's sign in
           </h1>
           <h1 className='auth-grey-text'>
-          Don't have an account?<span><Link className='a-text' to="/signup">Sign up</Link></span>
+          Don't have an account? <span><Link className='a-text' to="/signup">Sign up</Link></span>
           </h1>
         </div>
        <form>
@@ -66,6 +72,7 @@ function AuthLogin() {
           value={email} 
           onChange={(e)=>setEmail(e.target.value)}
           />
+          
         </div>
         <div className='input-container'>
           <label
@@ -74,17 +81,20 @@ function AuthLogin() {
           >
             Password
           </label>
-          <input
-           className='input-field'
-           placeholder='Enter password'
-           type='password'
-           autoComplete='new-password'
-           value={password} 
-           onChange={(e)=>setPassword(e.target.value)}
-
-            />
+          <div className='password-input-container'>
+            <input
+            className='input-field'
+            placeholder='Enter password'
+            type={showPassword?'text': 'password'}
+            autoComplete='new-password'
+            value={password} 
+            onChange={(e)=>setPassword(e.target.value)}
+              />
+              <div>
+                <img src={showPassword? eyeslash: eye} alt="" className='eye' onClick={()=>setShowPassword(!showPassword)}/>
+              </div>
+          </div>
           <p className='forgot-password'>Forgot password?</p>
-
         </div>
         <button type='button' onClick={onSubmit} className='auth-cta'>
           <span className='auth-btn-text'> Sign in </span>

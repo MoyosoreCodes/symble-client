@@ -4,6 +4,8 @@ import symbleLogo from '../../../assets/S.svg';
 import Googleicon from '../../../assets/Google.svg';
 import Facebookicon from '../../../assets/Facebook.svg';
 import Twittericon from '../../../assets/Twitter.svg';
+import eye from '../../../assets/eye.svg';
+import eyeslash from '../../../assets/eye-slash.svg';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useHistory } from 'react-router-dom';
@@ -17,6 +19,10 @@ export default function AuthSignup() {
   const [email, setEmail]= useState("")
   const [password, setPassword]= useState("")
   const [password2, setPassword2]= useState("")
+  const [showPassword, setShowPassword] = useState(false)
+  const [showPassword1, setShowPassword1] = useState(false)
+
+
   // const [disabled, setDisabled] = useState(true)
 
   // const handleGoogleSignup = async () =>{
@@ -110,10 +116,10 @@ export default function AuthSignup() {
       <img src={symbleLogo} alt="Symble logo" />
       </div>
       <h1 className='auth-title'>
-      Let's sign in
+      Sign up
       </h1>
       <h1 className='auth-grey-text'>
-      Don't have an account?<span><Link className='a-text' to="/signup">Sign up</Link></span>
+      Already have an account? <span><Link className='a-text' to="/login">Sign in</Link></span>
       </h1>
     </div>
    <form>
@@ -142,37 +148,49 @@ export default function AuthSignup() {
       />
     </div>
     <div className='input-container'>
-      <label
-      className='input-label'
-      htmlFor="Password"
-      >
-        Password
-      </label>
-      <input
-       className='input-field'
-       placeholder='Enter password'
-       type='password'
-       autoComplete='new-password'
-       value={password} 
-       onChange={(e)=>setPassword(e.target.value)}
-      /> 
-    </div>
-    <div className='input-container'>
-      <label
-      className='input-label'
-      htmlFor="Password"
-      >
-        Confirm Password
-      </label>
-      <input
-       className='input-field'
-       placeholder='Re-enter password'
-       type='password'
-       autoComplete='new-password'
-       value={password} 
-       onChange={(e)=>setPassword(e.target.value)}
-      /> 
-    </div>
+          <label
+          className='input-label'
+          htmlFor="Password"
+          >
+            Password
+          </label>
+          <div className='password-input-container'>
+            <input
+            className='input-field'
+            placeholder='Enter password'
+            type={showPassword?'text': 'password'}
+            autoComplete='new-password'
+            value={password} 
+            onChange={(e)=>setPassword(e.target.value)}
+              />
+              <div>
+                <img src={showPassword? eyeslash: eye} 
+                alt="" className='eye' 
+                onClick={()=>setShowPassword(!showPassword)}/>
+              </div>
+          </div>
+        </div>
+        <div className='input-container'>
+          <label
+          className='input-label'
+          htmlFor="Password"
+          >
+            Confirm Password
+          </label>
+          <div className='password-input-container'>
+            <input
+            className='input-field'
+            placeholder='Re-enter password'
+            type={showPassword1?'text': 'password'}
+            autoComplete='new-password'
+            value={password2} 
+            onChange={(e)=>setPassword2(e.target.value)}
+              />
+              <div>
+                <img src={showPassword1? eyeslash: eye} alt="" className='eye' onClick={()=>setShowPassword1(!showPassword1)}/>
+              </div>
+          </div>
+        </div>
     <button type='button' onClick={onSubmit} className='auth-cta'>
       <span className='auth-btn-text'> Sign in </span>
     </button>
