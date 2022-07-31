@@ -11,6 +11,13 @@ body {
   font-style: normal;
   height: 100vh;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
 }
 
 /* for the grid */
@@ -34,7 +41,6 @@ body {
 
 .auth-header {
   height: 25%;
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -129,11 +135,8 @@ body {
 
 /* for the symble logo */
 .symbleLogo{
-  position: absolute;
   width: 18px;
   height: 38px;
-  left: 30px;
-  top: 75px;
   font-weight: 700;
   font-size: 32px;
   line-height: 38px;
@@ -153,11 +156,8 @@ body {
 
 /* the login and signin headers */
 .title {
-  position: absolute;
   width: 144px;
   height: 43px;
-  left: 30px;
-  top: 121px;
   font-weight: bolder;
   font-size: 24px;
   line-height: 29px;
@@ -168,7 +168,6 @@ body {
 
 /* the login and signin anochor tags */
 .red-text {
-  position: absolute;
   width: 224px;
   height: 30px;
   left: 30px;
@@ -509,11 +508,8 @@ body {
 }
 
 .rev-text {
-  position: absolute;
   width: 149px;
   height: 12px;
-  left: 194px;
-  top: 370px;
   font-weight: lighter;
   font-size: 12px;
   line-height: 14px;
